@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".MainActivityhome">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="372dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:text="Good Day"
+            android:textColor="@color/white"
+            android:translationX="10dp"
+            android:translationY="20dp" />
+
+        <TextView
+            android:id="@+id/txtnombre"
+            android:layout_width="79dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:translationX="10dp"
+            android:translationY="40dp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log out"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:translationX="305dp"
+            android:translationY="70dp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BALANCE"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:translationX="150dp"
+            android:translationY="70dp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USD"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:translationX="110dp"
+            android:translationY="100dp" />
+
+        <TextView
+            android:id="@+id/txtsueldo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:translationX="150dp"
+            android:translationY="97dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:translationX="306dp"
+            android:translationY="20dp"
+            app:srcCompat="@drawable/img_person_picture" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="580dp"
+        android:background="@drawable/style_layout"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="save new transaction"
+            android:textStyle="bold"
+            android:translationX="30dp"
+            android:translationY="20dp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="310dp"
+            android:layout_height="60dp"
+            android:translationX="50dp"
+            android:translationY="40dp"
+            app:hintTextColor="@color/primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes"
+                android:hint="Amount"
+                android:maxLines="1"
+                android:textColorHint="@color/primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USD"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:translationX="300dp"
+            android:translationY="60dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/purple_700"
+            android:text="save transaction"
+            android:textColor="@color/primary"
+            android:translationX="50dp"
+            android:translationY="110dp" />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Recent Transactions"
+            android:translationX="35dp"
+            android:translationY="180dp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            android:textColor="@color/teal_200"
+            android:translationX="310dp"
+            android:translationY="180dp" />
+
+        <LinearLayout
+
+            android:layout_width="330dp"
+            android:layout_height="70dp"
+            android:background="@color/white"
+            android:translationX="35dp"
+            android:translationY="200dp">
+
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:translationX="10dp"
+                app:srcCompat="@drawable/img_logo_1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:translationX="20dp">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="top up by MM"
+                    android:textSize="10dp"
+                    android:translationY="7dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2nd/06/2000"
+                    android:textColor="@color/teal_200"
+                    android:textSize="10dp"
+                    android:translationY="7dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12:00pm"
+                    android:textColor="@color/gray"
+                    android:textSize="10dp"
+                    android:translationY="7dp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:rotation="180"
+                android:translationX="60dp"
+                android:translationY="20dp"
+                app:srcCompat="@drawable/img_arraw_top" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ 370,000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:translationX="70dp"
+                android:translationY="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="70dp"
+            android:background="@color/white"
+            android:translationX="35dp"
+            android:translationY="280dp">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:translationX="10dp"
+                app:srcCompat="@drawable/img_logo_2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:translationX="20dp">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lovie Munguniru"
+                    android:textSize="10dp"
+                    android:translationY="7dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2nd/06/2020"
+                    android:textColor="@color/teal_200"
+                    android:textSize="10dp"
+                    android:translationY="7dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12:00pm"
+                    android:textColor="@color/gray"
+                    android:textSize="10dp"
+                    android:translationY="7dp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:translationX="50dp"
+                android:translationY="20dp"
+                app:srcCompat="@drawable/home" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- 120,000"
+                android:textColor="@color/gris"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:translationX="60dp"
+                android:translationY="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="70dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:translationX="35dp"
+            android:translationY="360dp">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:translationX="10dp"
+                app:srcCompat="@drawable/img_logo_3" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:translationX="20dp">
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="top up by MM"
+                    android:textSize="10dp"
+                    android:translationY="7dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2nd/06/2020"
+                    android:textColor="@color/teal_200"
+                    android:textSize="10dp"
+                    android:translationY="7dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12:00pm"
+                    android:textColor="@color/gray"
+                    android:textSize="10dp"
+                    android:translationY="7dp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:rotation="180"
+                android:translationX="60dp"
+                android:translationY="20dp"
+                app:srcCompat="@drawable/img_arraw_top" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ 180,000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:translationX="60dp"
+                android:translationY="20dp" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
